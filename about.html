@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Project | Daily Pulse</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rozha+One&display=swap" rel="stylesheet">
+    <style>
+        /* Specific styles for the About Page */
+        /* Note: .about-container padding-top is adjusted because of the fixed header */
+        .about-container {
+            max-width: 800px;
+            margin: 0 auto; /* Remove top margin, use main padding */
+            background: white;
+            padding: 40px;
+            border-top: 5px solid #D32F2F; /* Red border */
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+        .about-heading {
+            font-family: 'Rozha One', serif;
+            font-size: 2.5rem;
+            color: #111;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+        .sub-heading {
+            text-align: center;
+            color: #777;
+            font-size: 1rem;
+            margin-bottom: 30px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: bold;
+        }
+        .about-text {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #444;
+            margin-bottom: 20px;
+        }
+        
+        /* Badge for Student Project */
+        .project-badge {
+            background-color: #eee;
+            border-left: 4px solid #D32F2F;
+            padding: 15px;
+            margin: 20px 0;
+            font-style: italic;
+            color: #555;
+        }
+
+        .developer-card {
+            display: flex;
+            align-items: center;
+            background: #f9f9f9;
+            border: 1px solid #eee;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 30px;
+        }
+        .dev-avatar {
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            background-color: #1a1a1a;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-right: 20px;
+        }
+        .dev-info h3 { margin: 0; font-size: 1.2rem; color: #D32F2F; }
+        .dev-info p { margin: 5px 0 0; color: #666; font-size: 0.9rem; }
+        
+        .back-btn {
+            display: inline-block;
+            margin-top: 20px;
+            text-decoration: none;
+            color: #D32F2F;
+            font-weight: bold;
+        }
+        .back-btn:hover { text-decoration: underline; }
+        
+        /* Ensure the main content container respects the fixed header */
+        main {
+            padding-top: 140px; /* Same as index.html main padding-top */
+            padding-bottom: 50px; /* Add some space before the footer */
+        }
+
+        /* Adjust header/nav for the about page (no search bar) */
+        .about-header .searchBar {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="about-header">
+        <nav>
+            <img src="./daily pulse logo.png" alt="" class="logo">
+            <h2 class="brand">Daily Pulse</h2>
+        </nav>
+        
+        <div class="searchBar">
+            <input type="text" id="txt" placeholder="Search news...">
+            <button class="btn">Search</button>
+        </div>
+    </header>
+
+    <main>
+        <div class="about-container">
+            <h1 class="about-heading">About The Project</h1>
+            <p class="sub-heading">Academic Web Development Project</p>
+            
+            <p class="about-text">
+                Welcome to <strong>Daily Pulse</strong>. This website was designed and developed as a <strong>student project</strong> to demonstrate proficiency in modern web development technologies.
+            </p>
+            
+            <div class="project-badge">
+                "The goal of this project was to build a functional, responsive News Application that interacts with a real-world API."
+            </div>
+
+            <p class="about-text">
+                This application fetches live data from <strong>The Guardian Open Platform API</strong>. It features dynamic DOM manipulation, asynchronous JavaScript (Fetch API), and a custom CSS design inspired by top-tier news publications.
+            </p>
+
+            <p class="about-text">
+                <strong>Key Features Implemented:</strong>
+            </p>
+            <ul style="margin-left: 20px; color: #555; line-height: 1.6;">
+                <li>Real-time API Data Fetching</li>
+                <li>Dynamic Category Filtering</li>
+                <li>Search Functionality</li>
+                <li>Responsive Grid Layout</li>
+                <li>Error Handling & Loading States</li>
+            </ul>
+
+            <div class="developer-card">
+                <div class="dev-avatar">N</div>
+                <div class="dev-info">
+                    <h3>Developed by NITISH KUMAR</h3>
+                    <p>Student Developer</p>
+                    <p>Department of Computer Science / Web Dev</p>
+                    <p>Student of CodingGita</p>
+                </div>
+            </div>
+
+            <a href="index.html" class="back-btn">&larr; Back to Headlines</a>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="about.html">About Daily pulse</a>
+                <a href="about.html">Contact Us</a>
+                <a href="about.html">Advertise</a>
+                <a href="about.html">Privacy Policy</a>
+            </div>
+            <p>&copy; 2025 Daily pulse Media. Powered by The Demu&Co.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
